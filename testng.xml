@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="D:/java/selenium/criptocurrencysite">
+        <classes>
+            <class name="tests.BugsFound">
+                <methods>
+                    <include name="trendingMarketsSliderBug"/>
+                    <include name="endlessSearch"/>
+                    <include name="noNumPadNoSearch"/>
+                </methods>
+            </class>
+            <class name="tests.TestHomePageLinks">
+                <methods>
+                    <include name="testOpenHomePage"/>
+                    <include name="testMarketsLink"/>
+                    <include name="testNFTLink"/>
+                </methods>
+            </class>
+            <class name="tests.TestMarketsPage">
+                <methods>
+                    <include name="testTwoCoins"/>
+                </methods>
+            </class>
+            <class name="tests.TestNFTPage">
+                <methods>
+                    <include name="testNFTPageFilters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
